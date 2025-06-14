@@ -1,0 +1,43 @@
+.tech-events-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+  background: linear-gradient(to right, #4f46e5, #f97316);
+  -webkit-background-clip: text;
+  
+  -webkit-text-fill-color: transparent;
+}
+
+.tech-events-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.event-card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  max-width: 400px;
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.event-card:hover {
+  transform: translateY(-5px);
+}
+
+.event-card h3 {
+  color: #1f2937;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.event-card p {
+  font-size: 0.95rem;
+  color: #4b5563;
+  line-height: 1.5;
+}
+

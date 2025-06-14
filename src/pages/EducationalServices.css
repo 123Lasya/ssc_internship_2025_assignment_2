@@ -1,0 +1,38 @@
+.educational-services {
+  padding: 30px;
+  max-width: 800px;
+  margin: auto;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f9fbfd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 51, 102, 0.1);
+}
+
+.educational-services h2 {
+  color: #003366;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.educational-services section {
+  background: #fff;
+  border-left: 5px solid #0078d4;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
+}
+
+.educational-services h3 {
+  color: #005a9c;
+  margin-top: 0;
+}
+
+.educational-services ul {
+  padding-left: 20px;
+}
+
+.educational-services li {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
