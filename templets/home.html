@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SSC - Student Service Community</title>
+    <link
+      rel="icon"
+      href="https://res.cloudinary.com/dxomtneac/image/upload/v1751069572/mainimg_lvbbvp.png"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div class="nav-left">
+        <img
+          src="https://res.cloudinary.com/dxomtneac/image/upload/v1751069572/mainimg_lvbbvp.png"
+          alt="SSC Logo"
+        />
+        <span><strong>SSC</strong></span>
+        <span>Student Service Community</span>
+      </div>
+      <div class="nav-right">
+        <a href="#">Home</a>
+        <a href="about.html">About Us</a>
+        <!-- Dropdown Container -->
+        <div class="dropdown-container">
+          <a href="#" id="dropdownToggle" class="dropdown-toggle">Join Us</a>
+          <div class="dropdown-menu" id="dropdownMenu">
+            <a href="student.html" class="dropdown-item">Student</a>
+            <a href="mentor.html" class="dropdown-item">Mentor</a>
+          </div>
+        </div>
+
+        <a href="mentorinfo.html">SSC Mentors</a>
+        <a href="portal.html"> Internships</a>
+        <a href="about.html#contact">Contact Us</a>
+      </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="home-section section">
+      <img
+        class="ssc-logo"
+        src="https://res.cloudinary.com/dxomtneac/image/upload/v1751069572/mainimg_lvbbvp.png"
+        alt="SSC Logo"
+      />
+      <h1 class="section-title">Welcome to Student Service Community (SSC)</h1>
+      <p class="section-subtitle">
+        Empowering students through service, education, and opportunities.
+      </p>
+
+      <div class="card-container">
+        <article class="card">
+          <h3>Our Mission</h3>
+          <p>
+            To provide comprehensive educational support, technical guidance,
+            and social service opportunities that empower students to excel in
+            their careers and contribute to society.
+          </p>
+        </article>
+        <article class="card">
+          <h3>Our Vision</h3>
+          <p>
+            Creating a vibrant community where students can access quality
+            education, develop technical skills, and engage in meaningful social
+            service initiatives.
+          </p>
+        </article>
+      </div>
+
+      <div class="row-md-4">
+        <button class="btn col-2 r-2 mx-md-2" id="joinBtn">
+          <a href="student.html">Join SSC</a>
+        </button>
+        <button class="btn col-2 r-2 mx-md-2" id="exploreBtn">
+          <a href="#education">Explore Services</a>
+        </button>
+      </div>
+    </section>
+
+    <!-- Educational Services Section -->
+    <section id="education" class="edu-services section">
+      <h1 class="section-title">Educational Services</h1>
+      <p class="section-subtitle">
+        Comprehensive learning support designed to accelerate your academic and
+        professional growth.
+      </p>
+
+      <div class="edu-cards">
+        <article class="edu-card">
+          <div class="edu-card-icon">💻</div>
+          <h3>Hackathon Guidance</h3>
+          <p>
+            Get expert tips, resources, and guidance for upcoming hackathons and
+            coding competitions.
+          </p>
+          <ul>
+            <li>Competition Strategies</li>
+            <li>Team Building</li>
+            <li>Project Ideas</li>
+            <li>Resource Library</li>
+          </ul>
+        </article>
+        <article class="edu-card">
+          <div class="edu-card-icon">🧳</div>
+          <h3>Career Development</h3>
+          <p>
+            Comprehensive career support from resume building to interview
+            preparation and job opportunities.
+          </p>
+          <ul>
+            <li>Resume Building</li>
+            <li>Interview Prep</li>
+            <li>Job Opportunities</li>
+            <li>Industry Insights</li>
+          </ul>
+        </article>
+        <article class="edu-card">
+          <div class="edu-card-icon">📘</div>
+          <h3>Tech Guidance</h3>
+          <p>
+            Learn cutting-edge technologies with expert mentorship across
+            multiple domains.
+          </p>
+          <ul>
+            <li>Programming Languages</li>
+            <li>Data Analytics</li>
+            <li>Web Development</li>
+            <li>Database Management</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- Technologies Section -->
+    <section id="technologies" class="tech-cover section">
+      <h2 class="section-title">Technologies We Cover</h2>
+      <p class="section-subtitle">
+        Choose your path and unlock your potential with real-world skills that
+        employers are looking for in today's tech-driven world.
+      </p>
+      <div class="tech-buttons">
+        <button class="tech-btn">Python</button>
+        <button class="tech-btn">Java</button>
+        <button class="tech-btn">C/C++</button>
+        <button class="tech-btn">Data Analytics</button>
+        <button class="tech-btn">Power BI</button>
+        <button class="tech-btn">SQL</button>
+        <button class="tech-btn">Frontend Dev</button>
+        <button class="tech-btn">Backend Dev</button>
+        <button class="tech-btn">Full Stack</button>
+      </div>
+    </section>
+
+    <!-- Tech Events Section -->
+    <section id="events" class="section">
+      <h1 class="section-title">Tech Events &amp; Industry Exposure</h1>
+      <p class="section-subtitle">
+        Connect with industry leaders and stay updated with the latest
+        technology trends
+      </p>
+      <div class="content-wrap" role="main">
+        <section
+          class="upcoming-events"
+          aria-labelledby="upcoming-events-label"
+        >
+          <h2 id="upcoming-events-label" class="upcoming-header">
+            Upcoming Events
+          </h2>
+          <article
+            class="event-card"
+            aria-labelledby="event1-title"
+            tabindex="0"
+          >
+            <h3 id="event1-title" class="event-title">
+              📅 <strong>Microsoft Tech Visit</strong>
+            </h3>
+            <div class="event-date-type">
+              January 15, 2024 &bull; Industry Visit
+            </div>
+            <p class="event-description">
+              Exclusive visit to Microsoft offices with hands-on workshops and
+              networking opportunities.
+            </p>
+            <button
+              class="register-btn"
+              aria-label="Register for Microsoft Tech Visit"
+            >
+              Register Now
+            </button>
+          </article>
+          <article
+            class="event-card"
+            aria-labelledby="event2-title"
+            tabindex="0"
+          >
+            <h3 id="event2-title" class="event-title">
+              👩‍💻 <strong>GDG Developer Summit</strong>
+            </h3>
+            <div class="event-date-type">
+              February 20, 2024 &bull; Conference
+            </div>
+            <p class="event-description">
+              Google Developer Group summit featuring latest technologies and
+              expert speakers.
+            </p>
+            <button
+              class="register-btn"
+              aria-label="Register for GDG Developer Summit"
+            >
+              Register Now
+            </button>
+          </article>
+        </section>
+        <section
+          class="past-experiences"
+          aria-labelledby="past-experiences-label"
+        >
+          <h2 id="past-experiences-label" class="past-header">
+            Past Experiences
+          </h2>
+          <ul class="past-list">
+            <li>
+              <span class="green-dot" aria-hidden="true"></span>AWS Cloud
+              Computing Workshop - 200+ participants
+            </li>
+            <li>
+              <span class="green-dot" aria-hidden="true"></span>Data Science
+              with Python - 150+ participants
+            </li>
+            <li>
+              <span class="green-dot" aria-hidden="true"></span>Mobile App
+              Development - 180+ participants
+            </li>
+            <li>
+              <span class="green-dot" aria-hidden="true"></span>Cybersecurity
+              Fundamentals - 120+ participants
+            </li>
+          </ul>
+        </section>
+      </div>
+    </section>
+    <header role="banner" aria-label="Page introduction">
+      <h1>Social Service Initiatives</h1>
+      <p>
+        Creating positive impact through community service and social
+        responsibility
+      </p>
+    </header>
+    <section id="social">
+      <section class="card-container" aria-label="Social service initiatives">
+        <article
+          class="card"
+          tabindex="0"
+          aria-labelledby="community-title"
+          aria-describedby="community-desc"
+        >
+          <div class="image-box" aria-label="Community outreach images - blank">
+            <img
+              src="https://res.cloudinary.com/dxomtneac/image/upload/v1751070138/1746093856203_yfxoyf.jpg"
+              alt=""
+            />
+          </div>
+          <h2 id="community-title">Community Outreach</h2>
+          <div class="left">
+            <p id="community-desc">
+              Food distribution, blanket donations. Making a difference in our
+              local communities through direct support.
+            </p>
+            <ul>
+              <li>Food Distribution Drives</li>
+              <li>Blanket Donation Campaigns</li>
+              <li>Healthcare Support</li>
+              <li>Emergency Relief</li>
+            </ul>
+          </div>
+        </article>
+
+        <article
+          class="card"
+          tabindex="0"
+          aria-labelledby="celebration-title"
+          aria-describedby="celebration-desc"
+        >
+          <div
+            class="image-box"
+            aria-label="Celebration events flag illustration - blank"
+          >
+            <img
+              src="https://res.cloudinary.com/dxomtneac/image/upload/v1751070441/OIP_iv3gyi.webp"
+              alt=""
+            />
+          </div>
+          <h2 id="celebration-title">Celebration Events</h2>
+          <div class="left">
+            <p id="celebration-desc">
+              Children's Day, Old Age Home visits. Bringing joy and celebration
+              to those who need it most.
+            </p>
+            <ul>
+              <li>Children's Day Celebrations</li>
+              <li>Old Age Home Visits</li>
+              <li>Festival Celebrations</li>
+              <li>Cultural Programs</li>
+            </ul>
+          </div>
+        </article>
+
+        <article
+          class="card"
+          tabindex="0"
+          aria-labelledby="school-title"
+          aria-describedby="school-desc"
+        >
+          <div
+            class="image-box"
+            aria-label="School support activities images - blank"
+          >
+            <img
+              src="https://res.cloudinary.com/dxomtneac/image/upload/v1751070285/1731514838989_pzxiwn.jpg"
+              alt=""
+            />
+          </div>
+          <h2 id="school-title">School Support</h2>
+          <div class="Left">
+            <p id="school-desc left ">
+              Education and meal distribution in underprivileged schools.
+              Ensuring access to quality education for all.
+            </p>
+            <ul>
+              <li>School Support Programs</li>
+              <li>Free Meal Distribution</li>
+              <li>Study Material Donation</li>
+              <li>Tutorial Sessions</li>
+            </ul>
+          </div>
+        </article>
+      </section>
+    </section>
+    <script src="style.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

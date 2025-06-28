@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SSC Mentors Showcase</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background-color: #2b004c;
+        color: white;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      .showcase-section {
+        padding: 60px 20px;
+        max-width: 1200px;
+        margin: auto;
+      }
+      .showcase-title {
+        color: #ffd500;
+        font-size: 2rem;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 40px;
+      }
+      .filter-btn {
+        background-color: #fff;
+        color: #2b004c;
+        border: none;
+        font-weight: 600;
+        padding: 8px 20px;
+        border-radius: 20px;
+        margin: 0 10px 20px 0;
+        cursor: pointer;
+      }
+      .filter-btn.active,
+      .filter-btn:hover {
+        background-color: #ffd500;
+        color: #2b004c;
+      }
+      .mentor-card {
+        background-color: #ffffff0d;
+        backdrop-filter: blur(6px);
+        border-radius: 16px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        padding: 20px;
+        color: white;
+        text-align: center;
+        transition: 0.3s ease;
+      }
+      .mentor-card img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-bottom: 15px;
+        border: 2px solid #ffd500;
+      }
+      .mentor-card h5 {
+        font-weight: 700;
+        margin-bottom: 5px;
+      }
+      .mentor-card small {
+        font-size: 0.9rem;
+        color: #ccc;
+      }
+      .mentor-card a {
+        margin: 5px;
+        font-size: 1.2rem;
+        color: #ffd500;
+      }
+      .mentor-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 24px;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-left">
+        <img
+          src="https://res.cloudinary.com/dxomtneac/image/upload/v1751069572/mainimg_lvbbvp.png"
+          alt="SSC Logo"
+        />
+        <span><strong>SSC</strong></span>
+        <span>Student Service Community</span>
+      </div>
+      <div class="nav-right">
+        <a href="home.html">Home</a>
+        <a href="about.html">About Us</a>
+        <div class="dropdown-container">
+          <a href="#" id="dropdownToggle" class="dropdown-toggle">Join Us</a>
+          <div class="dropdown-menu" id="dropdownMenu">
+            <a href="student.html" class="dropdown-item">Student</a>
+            <a href="mentor.html" class="dropdown-item">Mentor</a>
+          </div>
+        </div>
+        <a href="#">SSC Mentors</a>
+        <a href="portal.html"> Internships</a>
+        <a href="about.html#contact">Contact Us</a>
+      </div>
+    </nav>
+    <section class="showcase-section">
+      <h2 class="showcase-title">SSC Mentors Showcase</h2>
+      <div class="d-flex flex-wrap justify-content-center mb-4">
+        <button class="filter-btn active" onclick="filterMentors('all')">
+          All
+        </button>
+        <button class="filter-btn" onclick="filterMentors('tech')">Tech</button>
+        <button class="filter-btn" onclick="filterMentors('career')">
+          Career Guidance
+        </button>
+        <button class="filter-btn" onclick="filterMentors('social')">
+          Social Work
+        </button>
+      </div>
+      <div class="mentor-grid" id="mentorList">
+        <!-- Cards with updated LinkedIn links -->
+        <div class="mentor-card" data-category="tech">
+          <img
+            src="https://res.cloudinary.com/dxomtneac/image/upload/v1751069571/img_13_rwsn1i.jpg"
+            alt="Swathi Pokuri"
+          />
+          <h5>Swathi Pokuri</h5>
+          <small>Full-Stack Developer · Tech Mentor</small>
+          <div>
+            <a
+              href="https://www.linkedin.com/in/swathi-pokuri-607859312/"
+              target="_blank"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+          </div>
+        </div>
+        <div class="mentor-card" data-category="career">
+          <img
+            src="https://res.cloudinary.com/dxomtneac/image/upload/v1751069568/img_3_rxhbgb.jpg"
+            alt="Nikhila Sai Sri"
+          />
+          <h5>M. Nikhila Sai Sri</h5>
+          <small>Career Coach · Resume & Interview</small>
+          <div>
+            <a
+              href="https://www.linkedin.com/in/nikhila-maheswaram-6a3b1b301/"
+              target="_blank"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+          </div>
+        </div>
+        <div class="mentor-card" data-category="social">
+          <img
+            src="https://res.cloudinary.com/dxomtneac/image/upload/v1751069567/img_1_jfrjmu.jpg"
+            alt="Maheswaram Subrahmanyam"
+          />
+          <h5>Maheswaram Subrahmanyam</h5>
+          <small>Community Leader · Social Initiatives</small>
+          <div>
+            <a
+              href="https://www.linkedin.com/in/maheswaram-subrahmanyam-361238275/"
+              target="_blank"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+          </div>
+        </div>
+        <div class="mentor-card" data-category="career">
+          <img
+            src="https://res.cloudinary.com/dxomtneac/image/upload/v1751107340/1733848631236_cmnjbh.jpg"
+            alt="Challa Lakshmi Narasimha"
+          />
+          <h5>Challa Lakshmi Narasimha</h5>
+          <small>Career Mentor · Job Guidance</small>
+          <div>
+            <a
+              href="https://www.linkedin.com/in/challa-lakshmi-narasimha-89954b284/"
+              target="_blank"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+          </div>
+        </div>
+        <div class="mentor-card" data-category="tech">
+          <img
+            src="https://res.cloudinary.com/dxomtneac/image/upload/v1751102875/1727369797854_rwlzjs.jpg"
+            alt="Khadar Vali Shaik"
+          />
+          <h5>Khadar Vali Shaik</h5>
+          <small>DevOps · Microsoft Events</small>
+          <div>
+            <a
+              href="https://www.linkedin.com/in/khadar-vali-shaik-a2aa30270/"
+              target="_blank"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+          </div>
+        </div>
+        <div class="mentor-card" data-category="tech">
+          <img
+            src="https://res.cloudinary.com/dxomtneac/image/upload/v1751107377/1750001408462_bqbgb1.jpg"
+            alt="Mythrisri Kurra"
+          />
+          <h5>Mythrisri Kurra</h5>
+          <small>Tech Mentor · Events</small>
+          <div>
+            <a
+              href="https://www.linkedin.com/in/mythrisri-kurra/"
+              target="_blank"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+          </div>
+        </div>
+        <div class="mentor-card" data-category="tech">
+          <img
+            src="https://res.cloudinary.com/dxomtneac/image/upload/v1751105766/download_dei5vy.webp"
+            alt="Rumeena Shaik"
+          />
+          <h5>Rumeena Shaik</h5>
+          <small>Cybersecurity Expert · IEEE Podcaster</small>
+          <div>
+            <a
+              href="https://www.linkedin.com/in/rumeena-shaik-2307082b2/"
+              target="_blank"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+          </div>
+        </div>
+        <div class="mentor-card" data-category="social">
+          <img
+            src="https://res.cloudinary.com/dxomtneac/image/upload/v1751105766/download_dei5vy.webp"
+            alt="Sugali Sai Sudha"
+          />
+          <h5>Sugali Sai Sudha</h5>
+          <small>Hackathon Mentor · Social Contributor</small>
+          <div>
+            <a
+              href="https://www.linkedin.com/in/s-sai-sudha-904bb9305/"
+              target="_blank"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+          </div>
+        </div>
+        <div class="mentor-card" data-category="tech">
+          <img
+            src="https://res.cloudinary.com/dxomtneac/image/upload/v1751102885/1744447452929_jbsiya.jpg"
+            alt="Sreekar Sidhartha"
+          />
+          <h5>Sreekar Sidhartha</h5>
+          <small>Tech Mentor · Project Guidance</small>
+          <div>
+            <a
+              href="https://www.linkedin.com/in/sreekar-sidhartha-742b8132b/"
+              target="_blank"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+          </div>
+        </div>
+        <div class="mentor-card" data-category="social">
+          <img
+            src="https://res.cloudinary.com/dxomtneac/image/upload/v1751102840/1740724404638_tbwtbk.jpg"
+            alt="Susmitha Surasura"
+          />
+          <h5>Susmitha Surasura</h5>
+          <small>Social Service Volunteer</small>
+          <div>
+            <a
+              href="https://www.linkedin.com/in/susmitha-surasura-86460828a/"
+              target="_blank"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+          </div>
+        </div>
+        <div class="mentor-card" data-category="social">
+          <img
+            src="https://res.cloudinary.com/dxomtneac/image/upload/v1751105766/download_dei5vy.webp"
+            alt="Sravani"
+          />
+          <h5>Sravani</h5>
+          <small>Social Work · Volunteer</small>
+        </div>
+        <div class="mentor-card" data-category="social">
+          <img
+            src="https://res.cloudinary.com/dxomtneac/image/upload/v1751105766/download_dei5vy.webp"
+            alt="S. Irfan"
+          />
+          <h5>S. Irfan</h5>
+          <small>Social Volunteer · Event Organizer</small>
+        </div>
+      </div>
+    </section>
+    <script src="style.js"></script>
+  </body>
+</html>
